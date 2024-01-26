@@ -44,9 +44,9 @@ app.MapGet("/weatherforecast", async () =>
 {
     if(!dbContext.Users.Any()){
         var usersList = new List<User>{
-            new User{Name = "Manju"},
-            new User{Name = "Madan"},
-            new User{Name = "Ambika"}
+            new User{Name = "Ram"},
+            new User{Name = "Shyam"},
+            new User{Name = "Hari"}
         };
 
         await dbContext.Users.AddRangeAsync(usersList);
